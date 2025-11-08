@@ -18,6 +18,23 @@ O alerta máximo é acionado quando:
 * **Localização Atual (Câmera):** `PATIO_PRINCIPAL`
 
 ---
+## 🏗️ Tecnologias Utilizadas e Arquitetura
+
+O projeto é baseado em uma arquitetura robusta que combina **machine learning** com **serviços de banco de dados** para criar um sistema de **alerta logístico em tempo real**.
+
+---
+
+## 💻 Tecnologias Chave
+
+| **Componente**           | **Tecnologia**          | **Finalidade**                                                                 |
+|---------------------------|--------------------------|--------------------------------------------------------------------------------|
+| **Visão Computacional**   | TensorFlow / Keras       | Classificação de modelos de moto (*elétrica, pop, sport*).                     |
+| **Banco de Dados**        | Oracle Cloud             | Armazenamento do status logístico (*AGUARDANDO REPARO, DISPONÍVEL*, etc.).     |
+| **Conexão BD**            | Python `oracledb`        | Módulo de conectividade nativa Python com o Oracle.                            |
+| **Interface de Usuário**  | Gradio                   | Criação do frontend interativo para simulação de câmera e exibição de alertas. |
+| **Processamento de Imagem** | Pillow (PIL)            | Desenho dinâmico do ponto de alerta no mini-mapa esquemático (*mapa_setores.png*). |
+
+---
 
 ## 🏗️ Arquitetura e Fluxo de Dados
 
